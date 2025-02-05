@@ -1,0 +1,63 @@
+.header {
+  position: relative;
+  padding: 0 60px;
+  background-color: #000;
+  position: sticky;
+  top: 0;
+  z-index: 200;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0 10px;
+  }
+}
+
+.header .logo {
+  font-family: "Sriracha", serif;
+  width: fit-content;
+  margin: auto;
+  font-weight: bold;
+  color: #FFF;
+  padding: 10px;
+  font-size: 28px;
+  transform: translateX(8px);
+}
+
+.header .logo span {
+  color: var(--selector-color);
+  transition: var(--main-transition);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+  background-color: rgba(0 0 0 / 0.1);
+  backdrop-filter: blur(20px);
+  position: sticky;
+  top: 52.2px;
+  z-index: 100;
+  transition: var(--nav-transition) ease;
+}
+
+.nav li a {
+  color: #fff;
+  font-size: 17px;
+  transition: var(--main-transition);
+}
+
+@media (min-width: 767px) {
+  .nav li a {
+    font-size: 20px;
+  }
+}
+
+.nav:hover li a {
+  color: gray;
+}
+
+.nav li a:hover {
+  color: #fff;
+}

@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <!-- Header and nav -->
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/master.css">
+    <!-- Google Font Josefin Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+    <!-- Google Font Cinzel-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+    <!-- Google Font Sansita -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- Google Font Lavishly Yours "For Footer" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&display=swap" rel="stylesheet">
+    <!-- Google Font Oooh Baby "Option For Logo" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oooh+Baby&display=swap" rel="stylesheet">
+    <!-- Google Font Sriracha "For Logo" -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
+    <title>Formula 1</title>
+  </head>
+  <body>
+    <!-- Start Settings Box -->
+    <div class="settings-box">
+      <div class="toggle-settings">
+        <i class="fa-solid fa-gear gear"></i>
+      </div>
+      <div class="settings-container">
+        <div class="options-box mode-options">
+          <h4>Mode</h4>
+          <div class="modes">
+            <span class="dark mode">
+              <i class="fa-solid fa-moon" data-mode="dark"></i>
+            </span>
+            <span class="light mode">
+              <i class="fa-solid fa-sun" data-mode="light"></i>
+            </span>
+          </div>
+        </div>
+        <div class="options-box color-options">
+          <h4>Color</h4>
+          <ul>
+            <li data-color="#00DDE0" data-wallpaper="wallpaper_mercedes.jpg" class="active"></li> <!-- Mercedes-AMG -->
+            <li data-color="#ff5d00" data-wallpaper="wallpaper_redbull.jpg"></li>                 <!-- Red Bull Racing -->
+            <li data-color="#DC0000" data-wallpaper="wallpaper_ferrari.jpg"></li>                 <!-- Ferrari -->
+            <li data-color="#FF8700" data-wallpaper="maclaren_wallpaper.jpg"></li>                <!-- McLaren -->
+            <li data-color="#006F62" data-wallpaper="wallpaper_aston.jpg"></li>                   <!-- Aston Martin -->
+            <li data-color="#2293D1" data-wallpaper="wallpaper_alpine.jpg"></li>                  <!-- Alpine F1 -->
+            <li data-color="#005AFF" data-wallpaper="wallpaper_williams.jpg"></li>                <!-- Williams Racing -->
+            <li data-color="#A7B1D7" data-wallpaper="wallpaper_rb.jpg"></li>                      <!-- AlphaTauri -->
+            <li data-color="#9E1B32" data-wallpaper="wallpaper_hass.jpg"></li>                    <!-- Haas F1 Team -->
+            <li data-color="#9B1B30" data-wallpaper="wallpaper_sauber.jpg"></li>                  <!-- Stake F1 Team (Sauber) -->
+          </ul>
+        </div>
+        <div class="reset-option">
+          <span class="btn">Reset Settings</span>
+        </div>
+      </div>
+    </div>
+    <!-- End Settings Box -->
+    <!-- Start Header & Nav -->
+    <div class="header">
+      <div class="logo"><span>F</span>1</div>
+    </div>
+    <ul class="nav">
+      <li><a href="#about">About</a></li>
+      <li><a href="#teams">Teams</a></li>
+      <li><a href="#drivers">Drivers</a></li>
+      <li><a href="#records">Cars</a></li>
+      <li><a href="#races">Races</a></li>
+    </ul>
+    <!-- Start Header & Nav -->
+    <!-- Start Landing Page -->
+    <div class="landing">
+      <div class="overlay"></div>
+      <div class="container">
+      </div>
+      <div class="intro-txt">
+        <h1><span>Formula 1</span> Pure Speed</h1>
+        <p>
+          I knew he would hit the brakes... he has a wife and kids at home
+        </p>
+      </div>
+    </div>
+    <!-- End Landing Page -->
+    <!-- Start About Us -->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="info">
+          <h2 class="h2">About Formula One</h2>
+          <p>
+            Formula One (F1) is the highest class of
+            international single-seater auto racing,
+            governed by the FIA. Since its inception in 1950,
+            F1 has evolved into a global spectacle, featuring
+            legendary teams, iconic circuits, and
+            unparalleled engineering innovation.
+          </p>
+        </div>
+        <div class="img-holder">
+          <img src="imgs/about.jpg" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- End About Us -->
+    <!-- Start Teams -->
+    <div class="teams" id="teams">
+      <div class="container">
+        <h2 class="h2">F1 Teams</h2>
+        <div class="teams-boxes">
+          <div class="box">
+            <img src="imgs/teams/ferrari.jpg" alt="Ferrari">
+            <div class="text">
+              <h3>Ferrari</h3>
+              <p>Around 19.45 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.ferrari.com/en-EN/formula1" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/teams/mercedes.jpg" alt="Mercedes">
+            <div class="text">
+              <h3>Mercedes</h3>
+              <p>Around 17.87 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.mercedesamgf1.com/" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/teams/redbull.jpg" alt="Red Bull Racing">
+            <div class="text">
+              <h3>Red Bull Racing</h3>
+              <p>Around 16.70 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.redbullracing.com/int-en" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/teams/mclaren.jpg" alt="McLaren">
+            <div class="text">
+              <h3>McLaren</h3>
+              <p>Around 16.68 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.mclaren.com/racing/" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/teams/aston-martin.jpg" alt="Aston Martin">
+            <div class="text">
+              <h3>Aston Martin</h3>
+              <p>Around 6.54 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.astonmartinf1.com/en-GB/" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/teams/alpine.jpg" alt="Alpine">
+            <div class="text">
+              <h3>Alpine</h3>
+              <p>Around 5.50 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.alpine-cars.co.uk/formula-1/f1-team.html" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/teams/Alphatauri.jpg" alt="AlphaTauri">
+            <div class="text">
+              <h3>AlphaTauri</h3>
+              <p>Around 4.90 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.formula1.com/en/latest/article/alphatauri-rebrand-confirmed-for-2024-season-as-new-team-name-revealed.4xAWHWI66d5L9mFELLGb6J" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/teams/williams.jpg" alt="Williams">
+            <div class="text">
+              <h3>Williams</h3>
+              <p>Around 4.83 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.williamsf1.com/?srsltid=AfmBOorjO8iU3JUx_OFTInP_0GJ8BNSVg6tneartRy1MNtwZXVxas7AG" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/teams/haas.jpg" alt="Haas">
+            <div class="text">
+              <h3>Haas</h3>
+              <p>Around 4.55 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.haasf1team.com/" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+          <div class="box">
+            <img src="imgs/teams/alfa-romeo.jpg" alt="Sauber">
+            <div class="text">
+              <h3>Sauber</h3>
+              <p>Around 3.99 million followers.</p>
+            </div>
+            <div class="info">
+              <a href="https://www.sauber-group.com/corporate/news" target="_blank">
+                Read More
+                <i class="fa-solid fa-angles-right"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Teams -->
+    <!-- Start Drivers -->
+    <div class="drivers" id="drivers">
+      <h2 class="h2">Top Drivers</h2>
+      <div class="container">
+        <div class="driver-box">
+          <p>
+            A seven-time World Champion and one of the most
+            consistent drivers in the sport,
+            Hamilton continues to perform at an elite level.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/lewis-hamilton-mercedes.jpg" alt="">
+            <h3>Lewis Hamilton</h3>
+            <p>Mercedes</p>
+          </div>
+        </div>
+        <div class="driver-box">
+          <p>
+            Dominated the 2023 season with multiple race wins,
+            securing his third consecutive World Championship.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/max-verstappen-red-bull-racing.jpg" alt="">
+            <h3>Max Verstappen</h3>
+            <p>Red Bull Racing</p>
+          </div>
+        </div>
+        <div class="driver-box">
+          <p>
+            A young and talented driver known for his speed
+            and racing ability, Leclerc has been Ferrari's main
+            contender for victories.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/CharlesLeclerc.png" alt="">
+            <h3>Charles Leclerc</h3>
+            <p>Ferrari</p>
+          </div>
+        </div>
+        <div class="driver-box">
+          <p>
+            McLaren's brightest star, Norris has consistently
+            outperformed expectations,
+            showcasing strong racecraft and potential for podiums.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/lando-norris-mclaren.jpg" alt="">
+            <h3>Lando Norris</h3>
+            <p>McLaren</p>
+          </div>
+        </div>
+        <div class="driver-box">
+          <p>
+            A two-time World Champion, Alonso has shown he's
+            still a force to be reckoned with in F1,
+            often challenging for podiums.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/fernando-alonso-aston-martin-r.jpg" alt="">
+            <h3>Fernando Alonso</h3>
+            <p>Aston Martin</p>
+          </div>
+        </div>
+        <div class="driver-box">
+          <p>
+            A solid performer for Alpine, Ocon has been consistently
+            competitive and a reliable driver for the team.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/esteban-ocon-alpine.jpg" alt="">
+            <h3>Esteban Ocon</h3>
+            <p>Alpine</p>
+          </div>
+        </div>
+        <div class="driver-box">
+          <p>
+            The Finnish driver brings a wealth of experience from
+            his years at Mercedes and continues
+            to be a strong competitor for Alfa Romeo.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/ValtteriBottas.jpg" alt="">
+            <h3>Valtteri Bottas</h3>
+            <p>Alfa Romeo</p>
+          </div>
+        </div>
+        <div class="driver-box">
+          <p>
+            Magnussen has been Haas' most reliable driver,
+            known for his no-nonsense approach and
+            ability to bring results for the team.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/kevinmagnussen.png" alt="">
+            <h3>Kevin Magnussen</h3>
+            <p>Haas</p>
+          </div>
+        </div>
+        <div class="driver-box">
+          <p>
+            After a difficult time at Red Bull,
+            Albon has found a home at Williams,
+            often over-delivering in terms of performance and points.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/alex-albon-williams.jpg" alt="">
+            <h3>Alex Albon</h3>
+            <p>Williams</p>
+          </div>
+        </div>
+        <div class="driver-box">
+          <p>
+            The Japanese driver has been a consistentperformer
+            for AlphaTauri, improving each season and showing solid pace.
+          </p>
+          <div class="driver-info">
+            <img src="imgs/drivers/yuki-tsunoda-racing-bulls.jpg" alt="">
+            <h3>Yuki Tsunoda</h3>
+            <p>AlphaTauri</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Drivers -->
+    <!-- Start Cars -->
+    <div class="cars" id="cars">
+
+    </div>
+    <!-- End Cars -->
+    <!-- Start Race Schedules -->
+    <div class="races" id="races">
+      <div class="container">
+        <h2 class="h2">Race Schedules 2025</h2>
+        <div class="timeline">
+          <div class="line"></div>
+          <div class="date">March 14</div>
+          <div class="info left">
+            <div class="prix">Australian Grand Prix</div>
+            <div class="circuit">Albert Park Circuit, Melbourne</div>
+          </div>
+          <div class="date">March 16</div>
+          <div class="date">March 21</div>
+          <div class="info right">
+            <div class="prix">Chinese Grand Prix</div>
+            <div class="circuit">Shanghai International Circuit</div>
+          </div>
+          <div class="date">March 23</div>
+          <div class="date">April 4</div>
+          <div class="info left">
+            <div class="prix">Japanese Grand Prix</div>
+            <div class="circuit">Suzuka International Racing Course</div>
+          </div>
+          <div class="date">April 6</div>
+          <div class="date">April 11</div>
+          <div class="info right">
+            <div class="prix">Bahrain Grand Prix</div>
+            <div class="circuit">Bahrain International Circuit</div>
+          </div>
+          <div class="date">April 13</div>
+          <div class="date">April 18</div>
+          <div class="info left">
+            <div class="prix">Saudi Arabian Grand Prix</div>
+            <div class="circuit">Jeddah Corniche Circuit</div>
+          </div>
+          <div class="date">April 20</div>
+          <div class="date">May 2</div>
+          <div class="info right">
+            <div class="prix">Miami Grand Prix</div>
+            <div class="circuit">Miami International Autodrome</div>
+          </div>
+          <div class="date">May 4</div>
+          <div class="date">May 16</div>
+          <div class="info left">
+            <div class="prix">Emilia Romagna Grand Prix</div>
+            <div class="circuit">Imola Circuit</div>
+          </div>
+          <div class="date">May 18</div>
+          <div class="date">May 23</div>
+          <div class="info right">
+            <div class="prix">Monaco Grand Prix</div>
+            <div class="circuit">Circuit de Monaco</div>
+          </div>
+          <div class="date">May 25</div>
+          <div class="date">May 30</div>
+          <div class="info left">
+            <div class="prix">Spanish Grand Prix</div>
+            <div class="circuit">Circuit de Barcelona-Catalunya</div>
+          </div>
+          <div class="date">June 1</div>
+          <div class="date">June 13</div>
+          <div class="info right">
+            <div class="prix">Canadian Grand Prix</div>
+            <div class="circuit">Circuit Gilles Villeneuve, Montreal</div>
+          </div>
+          <div class="date">June 15</div>
+        </div>
+      </div>
+    </div>
+    <!-- End Race Schedules -->
+    <!-- Start Contact Us -->
+    <div class="contact">
+      <h2 class="h2">Contact Us</h2>
+      <div class="overlay"></div>
+      <div class="container">
+        <form action="">
+          <div class="inputs-group left">
+            <input class="input" type="text" placeholder="Your Name" name="name" />
+            <input class="input" type="text" placeholder="Your Phone" name="phone" />
+            <input class="input" type="email" placeholder="Your Email" name="email" />
+            <input class="input" type="text" placeholder="Subject" name="subject" />
+          </div>
+          <div class="inputs-group right">
+            <textarea class="input" name="messgae" placeholder="Your Message"></textarea>
+            <input class="input" type="submit" value="Send">
+          </div>
+        </form>
+      </div>
+    </div>
+    <!-- End Contact Us -->
+    <!-- Start Footer -->
+    <div class="footer">
+      <div class="name">Better Call Joo</div>
+      <div class="social">
+        <a href="https://github.com/JimmyMcGill11/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://x.com/BetterCallJoo?t=uxuTT7Cydliy_KvyX_tfCg&s=09" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/bettercalljoo_?igsh=MTU5ZDBmbWNnYWZ0NA==" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+    </div>
+    <!-- Start Footer -->
+  </body>
+  <script src="js/master.js"></script>
+  <script src="js/header.js"></script>
+</html>
