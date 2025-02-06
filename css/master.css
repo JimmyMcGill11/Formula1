@@ -291,9 +291,10 @@ a {
   left: 3%;
   /* top: 40%;
   transform: translate(-50%, -50%); */
-  top: 90%;
+  top: 100%;
   text-align: center;
-  width: 95%;
+  width: 94%;
+  opacity: 0;
 }
 
 .landing .intro-txt h1 {
