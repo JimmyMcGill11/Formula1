@@ -267,7 +267,7 @@ a {
 
 .landing {
   min-height: calc(100vh - 105px);
-  background-image: url(../imgs/wallpapers/wallpaperMercedes.jpg);
+  background-image: url(../imgs/wallpapers/mercedes.jpg);
   background-size: cover;
   background-position: center;
   position: relative;
