@@ -103,7 +103,7 @@ const landing = document.querySelector(".landing");
 let mainColor = localStorage.getItem("color");
 let mainWallpaper = localStorage.getItem("wallpaper");
 
-if (mainColor !== null) {
+if (mainColor !== null && mainWallpaper !== null) {
   document.documentElement.style.setProperty("--selector-color", localStorage.getItem("color"));
   landing.style.cssText = `background-image: url(../imgs/wallpapers/${mainWallpaper});`;
 
@@ -128,8 +128,8 @@ liColor.forEach(li => {
     });
 
     localStorage.setItem("color", e.target.getAttribute("data-color"));
-    localStorage.setItem("wallpaper", e.target.getAttribute("data-wallpaper"));
-    landing.style.cssText = `background-image: url(../imgs/wallpapers/${e.target.getAttribute("data-wallpaper")});`;
+    localStorage.setItem("wallpaper", e.target.dataset.wallpaper);
+    landing.style.cssText = `background-image: url(../imgs/wallpapers/${e.target.dataset.wallpaper});`;
     e.target.classList.add("active");
   });
 });
