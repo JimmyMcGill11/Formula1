@@ -284,7 +284,7 @@ a {
 }
 
 .landing .intro-txt {
-  transition: 1s;
+  transition: 1s ease-in-out;
   color: var(--font-color4);
   position: absolute;
   z-index: 2;
@@ -367,6 +367,7 @@ a {
 .teams {
   background-color: var(--bg-color);
   padding: var(--section-padding) 0;
+  background-image: linear-gradient(to bottom, var(--main-color) 10%, var(--selector-color) , var(--main-color) 90%);
 }
 
 .teams h2 {
@@ -433,17 +434,6 @@ a {
   background-color: var(--main-color);
   position: relative;
 }
-
-/* .drivers::after {
-  content: "";
-  width: 50%;
-  height: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  background-color: var(--selector-color);
-  transition: var(--main-transition);
-} */
 
 .drivers .container {
   position: relative;
@@ -728,6 +718,43 @@ a {
 }
 
 /* End Races */
+/* Start Gallery */
+
+.gallery {
+  padding: var(--section-padding) 0;
+  background-color: var(--main-color);
+  position: relative;
+  overflow: hidden;
+}
+
+@media (width: 767px) {
+  .gallery {
+    display: none;
+  }
+}
+
+.gallery .container {
+  position: relative;
+  z-index: 5;
+}
+
+.gallery img {
+  display: block;
+  margin: 10px 0;
+  width: 50vw;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.gallery img.left {
+  margin-right: auto;
+}
+
+.gallery img.right {
+  margin-left: auto;
+}
+
+/* End Gallery */
 /* Start Contact Us */
 
 .contact {
@@ -781,7 +808,7 @@ a {
 }
 
 .contact form .input::placeholder {
-  transition: calc(4 * var(--main-transition));
+  transition: calc(4 * var(--main-transition)) ease;
   color: #000;
   font-weight: bold;
   font-size: 14px;
