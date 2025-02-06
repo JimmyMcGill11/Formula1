@@ -21,6 +21,7 @@ document.addEventListener("click", event => {
 
 const modes = document.querySelectorAll(".settings-box .mode-options span i");
 const driversImgs = document.querySelectorAll(".drivers .driver-box .driver-info img");
+localStorage.setItem("mode", false);
 let imgsPath = ["lewis-hamilton-mercedes.jpg", "max-verstappen-red-bull-racing.jpg", "CharlesLeclerc.png", "lando-norris-mclaren.jpg", "fernando-alonso-aston-martin-r.jpg", "esteban-ocon-alpine.jpg", "ValtteriBottas.jpg", "kevinmagnussen.png", "alex-albon-williams.jpg", "yuki-tsunoda-racing-bulls.jpg"];
 
 if (localStorage.getItem("mode") !== null) {
@@ -139,3 +140,28 @@ skillProgress.forEach(span => {
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Car Changing
+
+const rightClick = document.querySelector(".cars .car .icon.right");
+const leftClick = document.querySelector(".cars .car .icon.left");
+const carImg = document.querySelector(".cars .car img");
+const carName = document.querySelector(".cars .car p");
+var i = 1;
+let carsImgsPath = ["mercedes.jpg", "ferrari.jpg", "redbull1.jpg", "mclaren.jpg", "alphatauri.jpg", "alpine.jpeg", "astonmartin.jpg", "haas.png", "sauber.jpg"];
+let carsPrandName = ["Mercedes", "Ferrari", "RedBull", "McLaren", "AlphaTuari", "Alpine", "AstonMartin", "Haas", "Sauber"];
+
+rightClick.addEventListener("click", () => {
+  if (i == carsImgsPath.length) i = 0;
+
+  carImg.src = `imgs/cars/${carsImgsPath.at(i)}`;
+  carName.innerHTML = `${carsPrandName.at(i)}`;
+  i++;
+});
+
+leftClick.addEventListener("click", () => {
+  if (i == carsImgsPath.length * -1) i = -1;
+  
+  i--;
+  carImg.src = `imgs/cars/${carsImgsPath.at(i)}`;
+  carName.innerHTML = `${carsPrandName.at(i)}`;
+});

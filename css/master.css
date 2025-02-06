@@ -426,7 +426,7 @@ a {
 /* Start Drivers */
 
 .drivers {
-  padding: var(--section-padding);
+  padding: var(--section-padding) 20px;
   background-color: var(--main-color);
   position: relative;
 }
@@ -519,11 +519,80 @@ a {
 
 /* End Drivers */
 /* Start Cars */
+
+.cars {
+  padding: var(--section-padding) 0;
+  background-color: var(--main-color);
+}
+
+
+.cars .car {
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.cars .car img {
+  max-width: 100%;
+  width: calc(100% - 100px);
+  position: relative;
+  transition: var(--main-transition);
+}
+
+.cars .car p {
+  font-size: 35px;
+  color: var(--font-color3);
+  text-align: center;
+  position: absolute;
+  z-index: 5;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.cars .car .icon {
+  background-color: var(--bg-color);
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 30px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: .5;
+  transition: var(--main-transition);
+  border-radius: 6px;
+}
+
+.cars .car .icon:hover {
+  opacity: 1;
+}
+
+.cars .car .icon.left {
+  left: 0;
+}
+
+.cars .car .icon.right {
+  right: 0;
+}
+
+.cars .car .icon i {
+  font-size: 20px;
+  color: var(--font-color2);
+  transition: var(--main-transition);
+}
+
+.cars .car .icon:hover i {
+  color: var(--selector-color);
+}
+
 /* End Cars */
 /* Start Races */
 
 .races {
-  padding: var(--section-padding);
+  padding: var(--section-padding) 0;
   background-color: var(--bg-color);
 }
 
