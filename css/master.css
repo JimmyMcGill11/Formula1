@@ -284,12 +284,14 @@ a {
 }
 
 .landing .intro-txt {
+  transition: 1s;
   color: var(--font-color4);
   position: absolute;
   z-index: 2;
-  left: 50%;
-  top: 40%;
-  transform: translate(-50%, -50%);
+  left: 3%;
+  /* top: 40%;
+  transform: translate(-50%, -50%); */
+  top: 90%;
   text-align: center;
   width: 95%;
 }

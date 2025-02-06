@@ -196,3 +196,13 @@ leftClick.addEventListener("click", () => {
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+// Animte h1
+
+const introTxt = document.querySelector(".landing .intro-txt");
+
+window.onload = function () {
+  introTxt.style.cssText = `
+    top: 40%;
+    transform: translateY(-50%); 
+  `;
+}
