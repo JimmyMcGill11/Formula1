@@ -564,6 +564,7 @@ a {
   opacity: .5;
   transition: var(--main-transition);
   border-radius: 6px;
+  cursor: pointer;
 }
 
 .cars .car .icon:hover {
