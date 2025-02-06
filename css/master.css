@@ -91,11 +91,11 @@ a {
 }
 
 ::-webkit-scrollbar-track {
-  background: #222;
+  background: #111;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: linear-gradient(to bottom, #000 20%, var(--selector-color));
+  background: linear-gradient(to bottom, var(--main-color) 20%, var(--selector-color));
   border-radius: 10px;
 }
 

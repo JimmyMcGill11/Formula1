@@ -20,6 +20,8 @@ document.addEventListener("click", event => {
 // Mode Options
 
 const modes = document.querySelectorAll(".settings-box .mode-options span i");
+const driversImgs = document.querySelectorAll(".drivers .driver-box .driver-info img");
+let imgsPath = ["lewis-hamilton-mercedes.jpg", "max-verstappen-red-bull-racing.jpg", "CharlesLeclerc.png", "lando-norris-mclaren.jpg", "fernando-alonso-aston-martin-r.jpg", "esteban-ocon-alpine.jpg", "ValtteriBottas.jpg", "kevinmagnussen.png", "alex-albon-williams.jpg", "yuki-tsunoda-racing-bulls.jpg"];
 
 if (localStorage.getItem("mode") !== null) {
   if (localStorage.getItem("mode") == 'true') {
@@ -30,6 +32,12 @@ if (localStorage.getItem("mode") !== null) {
     document.documentElement.style.setProperty("--bg-color", "#EEE");
     document.documentElement.style.setProperty("--border-color", "#DDD");
     document.documentElement.style.setProperty("--shadow-color", "#FFFFFF18");
+
+    let i = 0;
+    driversImgs.forEach((img) => {
+      img.src = `imgs/driversLightMode/${imgsPath[i]}`;
+      i++;
+    });
   }
 }
 
@@ -44,6 +52,12 @@ modes.forEach(mode => {
       document.documentElement.style.setProperty("--bg-color", "#EEE");
       document.documentElement.style.setProperty("--border-color", "#DDD");
       document.documentElement.style.setProperty("--shadow-color", "#00000053");
+
+      let i = 0;
+      driversImgs.forEach((img) => {
+        img.src = `imgs/driversLightMode/${imgsPath[i]}`;
+        i++;
+      });
     } else {
       localStorage.setItem("mode", false);
       document.documentElement.style.setProperty("--main-color", "#000");
@@ -53,6 +67,12 @@ modes.forEach(mode => {
       document.documentElement.style.setProperty("--font-color4", "#999");
       document.documentElement.style.setProperty("--border-color", "#555");
       document.documentElement.style.setProperty("--shadow-color", "#FFFFFF20");
+
+      let i = 0;
+      driversImgs.forEach((img) => {
+        img.src = `imgs/drivers/${imgsPath[i]}`;
+        i++;
+      });
     }
   });
 });
