@@ -1,0 +1,15 @@
+.teams-flow {
+  animation: teams both;
+  animation-timeline: view(50% 20%);
+}
+
+@keyframes teams {
+  from {
+    transform: translateY(200px) scale(.7);
+    opacity: 0.3;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
