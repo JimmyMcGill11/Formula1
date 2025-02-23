@@ -150,12 +150,50 @@ resetButton.onclick = function () {
 }
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-// Skills Progress
+// Drivers
 
-const skillProgress = document.querySelectorAll(".skills .skill-box .skill-progress span");
+const driversContainer = document.querySelector(".drivers .container");
 
-skillProgress.forEach(span => {
-  span.style.width = span.dataset.progress;
+driversContainer.addEventListener("wheel", (e) => {
+  e.preventDefault();
+  driversContainer.scrollLeft += e.deltaY * 1.7;
+});
+
+// Touch Swipe Scroll
+let isDown = false;
+let startX;
+let scrollLeft;
+
+driversContainer.addEventListener("touchstart", (e) => {
+  isDown = true;
+  startX = e.touches[0].pageX - driversContainer.offsetLeft;
+  scrollLeft = driversContainer.scrollLeft;
+});
+
+driversContainer.addEventListener("touchmove", (e) => {
+  if (!isDown) return;
+  e.preventDefault();
+  const x = e.touches[0].pageX - driversContainer.offsetLeft;
+  const walk = (x - startX) * 2; // Adjust speed of swipe
+  driversContainer.scrollLeft = scrollLeft - walk;
+});
+
+driversContainer.addEventListener("touchend", () => {
+  isDown = false;
+});
+
+const driver = document.querySelectorAll(".drivers .driver-box");
+
+driversContainer.addEventListener("mousemove", (e) => {
+  driver.forEach((driver) => {
+
+    const rect = driver.getBoundingClientRect();
+    x = e.clientX - rect.left;
+    y = e.clientY - rect.top;
+    
+    driver.style.setProperty("--mouse-x", `${x}px`);
+    driver.style.setProperty("--mouse-y", `${y}px`);
+  });
 });
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
